@@ -1,5 +1,5 @@
 Hi! 👋 I'm **Manaswi Goyal**, and this is my first ever web project.  
-It's a simple interactive portfolio page I built while learning HTML, CSS, and JavaScript — with a lot of help from ChatGPT (for generating, understanding, and improving code).
+It's a simple interactive portfolio page I built while learning HTML, CSS, and JavaScript — with help from ChatGPT (for generating, understanding, and improving code).
 
 ---
 

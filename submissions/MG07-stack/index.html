@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        
+        <div class="top-box">My Portfolio</div>
+        <div class="container">
+              <div id="home-view">
+            <h1 id="name"><a href="https://www.linkedin.com/in/manaswi-goyal-45844337a/" class="link" target="_blank">Manaswi Goyal</a></h1>
+                    <button class="about-btn" onclick="showAbout()">About Me</button>
+            <p class="tagline">Expert at pressing buttons I shouldn't.</p>
+            <div class="buttons">
+                <button onclick="changeBackground('#f5f984ff')">Calm Yellow</button>
+                 <button onclick="changeBackground('#00b894')">Soothing Green</button>
+                 <button onclick="changeBackground('#7777ff')">Relaxing Blue</button>
+            </div>
+        </div>
+          <div id="about-view" style="display: none;">
+        <div class="back-arrow" onclick="goBack()">←</div>
+        <h2>About Me</h2>
+        <p>
+Hi, I’m <strong>Manaswi Goyal</strong> — a curious learner who loves exploring new ideas in technology and mathematics. I enjoy blending logic and creativity to understand how things work beneath the surface. I’m currently exploring the fields of cybersecurity. <br>
+I also love helping others with tech-related problems — whether it’s suggesting the right laptop, troubleshooting hardware or software issues, or just figuring out why something broke. If it involves tech, I’m always up for the challenge!
+        </p>
+      </div>
+    </div>
+        <script src="script.js"></script>
+    </body>
+</html> 

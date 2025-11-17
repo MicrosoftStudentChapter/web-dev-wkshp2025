@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voshubh Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            padding: 40px;
+            background: #222;
+            color: white;
+        }
+        section {
+            padding: 20px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Voshubh</h1>
+        <p>Web Developer | Learner | Creator</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Hello! I am Voshubh, a passionate learner exploring web development. This is my simple portfolio page created using HTML, CSS, and JavaScript.</p>
+
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:voshubh.6421@gmail.com">voshubh.6421@gmail.com</a></p>
+    </section>
+
+    <section>
+        <h2>Change Background Color</h2>
+        <button onclick="changeColor('lightblue')">Light Blue</button>
+        <button onclick="changeColor('lightgreen')">Light Green</button>
+        <button onclick="changeColor('lightyellow')">Light Yellow</button>
+    </section>
+
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

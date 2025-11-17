@@ -1,0 +1,35 @@
+/* ===== style.css ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+header {
+    padding: 40px;
+    background: #222;
+    color: white;
+}
+section {
+    padding: 20px;
+}
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ===== script.js (Below) ===== */
+/* Copy this part into a separate script.js file */
+/*
+function changeColor(color) {
+    document.body.style.backgroundColor = color;
+}
+*/

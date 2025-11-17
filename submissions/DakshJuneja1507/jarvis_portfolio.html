@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jarvis Interface</title>
+    <link rel="stylesheet" href="jarvis_styles.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Enhanced Jarvis Navigation -->
+    <nav class="jarvis-nav">
+        <div class="nav-circle">
+            <!-- Outer rotating rings -->
+            <div class="orbit-ring outer-ring"></div>
+            <div class="orbit-ring middle-ring"></div>
+            <div class="orbit-ring inner-ring"></div>
+            
+            <!-- Scanning effect -->
+            <div class="scanner"></div>
+            
+            <!-- Core hologram -->
+            <div class="nav-core">
+                <div class="core-inner"></div>
+                <div class="hologram-effect"></div>
+            </div>
+            
+            <!-- Navigation buttons on orbit -->
+            <div class="nav-btn-wrapper home-pos">
+                <button class="nav-btn active" data-page="home">
+                    <span class="btn-icon">⌂</span>
+                    <span class="btn-text">Home</span>
+                </button>
+            </div>
+            <div class="nav-btn-wrapper projects-pos">
+                <button class="nav-btn" data-page="projects">
+                    <span class="btn-icon">⚡</span>
+                    <span class="btn-text">Projects</span>
+                </button>
+            </div>
+            <div class="nav-btn-wrapper skills-pos">
+                <button class="nav-btn" data-page="skills">
+                    <span class="btn-icon">◈</span>
+                    <span class="btn-text">Skills</span>
+                </button>
+            </div>
+            
+            <!-- Connection lines -->
+            <svg class="connection-lines" viewBox="0 0 300 300">
+                <line x1="150" y1="150" x2="150" y2="30" class="line line-home"/>
+                <line x1="150" y1="150" x2="260" y2="150" class="line line-projects"/>
+                <line x1="150" y1="150" x2="150" y2="270" class="line line-skills"/>
+                <circle cx="150" cy="150" r="3" class="line-dot"/>
+            </svg>
+        </div>
+    </nav>  
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <h1 class="page-title">
+                <span class="title-glitch" data-text="Welcome">Welcome</span>
+            </h1>
+            <div class="photo-frame">
+                <div class="frame-corner tl"></div>
+                <div class="frame-corner tr"></div>
+                <div class="frame-corner bl"></div>
+                <div class="frame-corner br"></div>
+                <div class="scan-line"></div>
+                <div class="hologram-overlay"></div>
+                <img src="daksh2.jpg" alt="Profile Photo">
+            </div>
+            <div class="about-section">
+                <div class="about-content">
+                    <h2>About Me</h2>
+                    <p> Hi! I’m Daksh Juneja, an 18-year-old student pursuing B.Tech in Robotics and Automation at Thapar Institute of Engineering and Technology. I’m passionate about AI-driven robotics, automation, and innovation, and I love turning ideas into impactful projects</p>
+                    <p>I was selected for the National Level CBSE Science Exhibition and had the incredible opportunity to present my project in front of Hon’ble Prime Minister Shri Narendra Modi Ji at Bharat Mandapam. I’m also the founder of Yuvkriti, an NGO that empowers youth to drive positive social change, and the creator of “Aetheria: The Science Chronicles”, an educational science board game that makes learning interactive and fun. In addition, I won the CorpEureka Ideathon, showcasing my ability to blend innovation with practical problem-solving.</p>
+                    <p>Beyond academics, I’m constantly exploring new technologies, participating in hackathons, and striving to bridge creativity with the future of robotics and AI.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Page -->
+        <div id="projects" class="page">
+            <h1 class="page-title">
+                <span class="title-glitch" data-text="Projects">Projects</span>
+            </h1>
+            <div class="projects-grid"> 
+                <div class="project-card">
+                    <div class="card-header"></div>
+                    <h3>Terra Mitra</h3>
+                    <p>Terra Mitra is an AIoT-based smart farming system that empowers farmers through real-time data on soil, weather, and crop conditions. It provides AI-driven recommendations, a regional-language chatbot for support, and a smart marketplace for fertilizers — helping farmers boost yield, cut costs, and promote sustainable agriculture. The project was proudly presented before Hon’ble Prime Minister Shri Narendra Modi Ji at Bharat Mandapam for its innovative approach to transforming Indian farming</p>
+                    <p>I managed the product development and team coordination for Terra Mitra, while also handling report writing, presentations, and marketing, ensuring the project’s smooth execution and impactful delivery.</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="project-card">
+                    <div class="card-header"></div>
+                    <h3>ROAD SAGA</h3>
+                    <p>Road Saga is an innovative road safety project designed to teach young children about real-life driving challenges and safe road practices through smart technology. The project was selected for the National Level CBSE Science Exhibition for its creativity and impact.</p>
+                    <p>1.Sleepless Driver Alert: Detects drowsy drivers using an IR sensor and alerts them with a buzzer and LED.</p>
+                    <p>2.Smart Red Light: Automated barriers prevent red-light jumping and ensure pedestrian safety.</p>
+                    <p>3.Pothole & Blind Spot Detection: AI-enabled cameras and ultrasonic sensors identify potholes and vehicles at blind turns to prevent accidents.</p>
+                    <p>My Contribution</p>
+                    <p>I developed the Pothole Detection System and actively contributed to building the project’s Minimum Viable Product (MVP), ensuring all modules worked together seamlessly to deliver a functional and impactful prototype</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="project-card">
+                    <div class="card-header"></div>
+                    <h3>ATL MANAGEMENT SYSTEM</h3>
+                    <p>ATL Management System is a Python and MySQL-based project developed to streamline the operations of Atal Tinkering Labs (ATL). It efficiently manages electronic inventory, tracks issued components, and organizes projects within the lab. The system ensures proper resource allocation, maintains accurate records, and helps prevent shortages — making lab management more organized, transparent, and efficient.</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="project-card">
+                    <div class="card-header"></div>
+                    <h3>Simple Calculator and Image Viewer</h3>
+                    <p>I created a simple calculator using Python’s Tkinter library that performs addition operations. It features a basic and easy-to-use GUI, serving as an introduction to GUI development in Python.</p>
+                    <p>I created an Image Viewer using Python’s Tkinter library, which allows users to open and view images easily through a simple graphical interface. The project demonstrates the use of Tkinter and Pillow (PIL) for handling and displaying images, offering a basic yet functional example of GUI-based image applications in Python</p>
+                    <div class="card-glow"></div>
+                </div>
+                <div class="project-card">
+                    <div class="card-header"></div>
+                    <h3>TechMesh</h3>
+                    <p>I, along with my team The Tycoon Minded, won the CorpEureka Ideathon organized by CTD (Centre for Training and Development), Thapar Institute of Engineering and Technology.
+                       Our project, TrustMesh, proposed a self-healing village network layer that protects rural IoT systems like healthcare, water pumps, and energy grids from cyber sabotage — without shutting them down or compromising privacy.
+                       The system uses AI-based anomaly detection, sandbox isolation, and transparent alerts in local languages, ensuring community safety and trust. This project reflected our goal of merging technology, security, and social responsibility to support Digital India’s rural innovation ecosystem.</p>
+                    
+                    <div class="card-glow"></div>
+                </div>
+                <div class="project-card">
+                    <div class="card-header"></div>
+                    <h3>Co Founder:Yuvkriti</h3>
+                    <p>Yuvkriti is a youth-led NGO focused on teaching money-making and real-world life skills while currently conducting awareness drives to create social impact.</p>
+                    <p>Our key initiatives include:</p>
+                    <p>Book Collection Drive (with TOG): Collected and donated books, bags, and stationery to support education for underprivileged children.</p>
+                    <p>Art & Donation Drive (with ASR): Organized art activities, shared stationery and snacks, and spent a fun-filled day with kids.</p>
+                    <p>Bangalore Art Drive: Promoted creativity through crafts, dance, and a healthy lifestyle awareness session.</p>
+                    <p>Sanskar – For a Better Tomorrow: Focused on spreading moral values, empathy, and positive thinking among youth.</p>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Page -->
+        <div id="skills" class="page">
+            <h1 class="page-title">
+                <span class="title-glitch" data-text="Skill Set">Skill Set</span>
+            </h1>
+            <div class="skills-container">
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">Tkinter</div>
+                <div class="skill-tag">Product Development</div>
+                <div class="skill-tag">Leadership</div>
+                <div class="skill-tag">Marketing</div>
+                <div class="skill-tag">Presentation</div>
+                <div class="skill-tag">NPO Management</div>
+                <div class="skill-tag">Creative Thinking</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jarvis_script.js"></script>
+</body>
+</html>

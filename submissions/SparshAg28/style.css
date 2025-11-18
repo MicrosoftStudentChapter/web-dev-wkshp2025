@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #222;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.main {
+    border-radius: 15px;
+    padding: 40px;
+    margin: 10px;
+    background-color: #FF7F50;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 22px;
+    background: none;
+    border: none;
+    color: rgb(125, 125, 125);
+    cursor: pointer;
+}
+
+.dark-toggle {
+    display: block;
+    font-size: 22px;
+    background: none;
+    border: none;
+    color: rgb(125, 125, 125);
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 22px;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #fafad2;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.box{
+    border-radius: 15px;
+    padding: 40px;
+    margin: 10px;
+    background-color: #FFA07A;
+}
+
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-bottom: 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    width: 70%;
+    max-width: 1200px;
+    padding: 60px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.Education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Education li {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 5px;
+}
+
+.Education li:last-child {
+    border-bottom: none;
+}
+
+.education-details h3 {
+    margin-bottom: 3px;
+    font-size: 1.2em;
+}
+
+.education-year p {
+    font-weight: bold;
+    text-align: right;
+    white-space: nowrap;
+    color: #007bff;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.social-links a {
+    color: #222;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 600px) {
+    .Education li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .education-details {
+        margin-bottom: 10px;
+    }
+    .education-year p {
+        text-align: center;
+    }
+    .social-links {
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        padding: 20px;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 200px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode .navbar {
+    background: #1f1f1f;
+}
+
+body.dark-mode .nav-links a {
+    color: #ccc;
+}
+
+body.dark-mode .main {
+    background-color: #1f1f1f; 
+    border: 1px solid #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode .box {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode .box h2,
+body.dark-mode .box h3 {
+    color: #f0f0f0;
+}
+
+body.dark-mode .project-card {
+    background: #2b2b2b;
+    border: 1px solid #444;
+    color: #f0f0f0;
+}
+
+body.dark-mode .project-card:hover {
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* --- EDITED: Set text color to white for better visibility in dark mode --- */
+body.dark-mode .btn {
+    color: #ffffff; /* Ensures button text is white */
+}
+
+body.dark-mode .education-year p,
+body.dark-mode .social-links a:hover,
+body.dark-mode .project-card p[style] {
+    color: #4a90e2;
+}
+
+body.dark-mode footer {
+    background: #1f1f1f;
+    border-top: 1px solid #333;
+}
+
+body.dark-mode .modal-content {
+    background: #2b2b2b;
+    color: #f0f0f0;
+}
+
+body.dark-mode .modal-close {
+    color: #f0f0f0;
+}

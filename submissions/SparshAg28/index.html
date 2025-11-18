@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Sparsh Agarwal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+
+
+
+
+    <nav class="navbar">
+        <div class="logo">Portfolio of Sparsh Agarwal</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <button class="dark-toggle" id="darkToggle">🌙</button>
+    </nav>
+
+
+
+
+    <section id="home" class="hero">
+        <div class="main">
+        <h1>Sparsh Agarwal</h1>
+        <p>Developer | Robotics Enthusiast | Tech Innovator</p>
+        <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+
+
+
+    <br>
+    <br>
+    <section id="about" class="about">
+        <div class="box">
+            <h2>About Me</h2>
+            <br>
+            <p>
+                Hi I am Sparsh Agarwal, a passionate developer and robotics enthusiast. I love building
+                innovative projects and exploring new technologies.
+            </p>
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+
+<section id="Education" class="Education">
+        <div class="box">
+            <h2>Education</h2>
+            <br>
+            <ul>
+                <li>
+                    <div class="education-details">
+                        <h3>Bachelor of Engineering (BE)</h3>
+                        <p>Thapar Institute of Technology, Patiala, Punjab</p>
+                    </div>
+                    <div class="education-year">
+                        <p>Expected Graduation: 2029</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="education-details">
+                        <h3>Class XII - CBSE Board</h3>
+                        <p>St. Anne's Sr. Sec. School, Jodhpur, Rajasthan</p>
+                    </div>
+                    <div class="education-year">
+                        <p>2025 | 92.2%</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="education-details">
+                        <h3>Class X - CBSE Board</h3>
+                        <p>St. Anne's Sr. Sec. School, Jodhpur, Rajasthan</p>
+                    </div>
+                    <div class="education-year">
+                        <p>2023 | 93%</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+  
+
+
+    <br>
+    <br>
+
+
+    <section id="skills" class="skills">
+        <div class="box">
+            <h2>My Skills</h2>
+            <br>
+            <ul>
+                <li>Programming Languages: Python, C, JS</li>
+                <li>Web Development: HTML, CSS</li>
+                <li>Robotics: Arduino, 3D Printing</li>
+                <li>DBMS: MySQL</li>
+            </ul>
+        </div>
+
+
+    <br>
+    <br>
+
+
+
+
+    <section id="projects" class="projects">
+        <div class="box">
+            <h2>Projects</h2>
+            <br>
+            <div class="project-grid">
+                <div class="project-card" onclick="openProject('vocab')">
+                    <h3>The Vocab Learner</h3>
+                    <p>Learn new words effortlessly, every day.</p>
+                    <p style="color: rgb(117, 58, 253);">     Click for more details</p>
+                </div>
+
+                <div class="project-card" onclick="openProject('glove')">
+                    <h3>Robotic Glove</h3>
+                    <p>A low-cost glove helping paralytic patients move fingers.</p>
+                    <p style="color: rgb(117, 58, 253);">      Click for more details</p>
+                </div>
+
+                <div class="project-card" onclick="openProject('trolley')">
+                    <h3>Robotic Trolley</h3>
+                    <p>A contactless COVID-era medicine delivery trolley.</p>
+                    <p style="color: rgb(117, 58, 253);">     Click for more details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <br>
+    <br>
+
+
+    <section id="contact" class="contact">
+        <div class="box">
+            <h2><large>Contact</large></h2>
+            <br>
+            <p><large>Email: <strong>sagarwal6_be25@thapar.edu</strong></large></p>
+            <p><large>Phone No.: <strong>+918233820060</strong></large></p>
+            <br>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sparsh-agarwal-638b58380/" target="_blank" title="LinkedIn Profile">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                
+                <a href="https://github.com/SparshAg28" target="_blank" title="GitHub Profile">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+            
+            <br>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>Made By Sparsh Agarwal.</p>
+    </footer>
+
+
+
+
+
+    <!-- POPUP MODAL (same for all projects) -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">✖</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

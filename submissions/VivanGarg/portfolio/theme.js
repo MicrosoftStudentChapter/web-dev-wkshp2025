@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             if (theme === "light") {
-                document.documentElement.style.backgroundColor = "#BFA98A";
+                document.documentElement.style.backgroundColor = "#BFA98A"; 
                 document.documentElement.style.color = "black";
             }
 
@@ -22,6 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.documentElement.style.backgroundColor = "#001F3F";
                 document.documentElement.style.color = "#F6F6F6";
             }
+        });
+    });
+
+    const copyBtn = document.getElementById("copy-email-btn");
+    const copyMsg = document.getElementById("copy-msg");
+
+    copyBtn.addEventListener("click", () => {
+        const email = "vivangarg124@gmail.com"; 
+
+        navigator.clipboard.writeText(email).then(() => {
+            copyMsg.style.display = "block";
+            setTimeout(() => {
+                copyMsg.style.display = "none";
+            }, 1500);
         });
     });
 });

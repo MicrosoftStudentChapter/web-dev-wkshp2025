@@ -1,0 +1,90 @@
+.wholebody{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.divleft{
+    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+a:hover {
+      color: #ffb703;
+}
+
+.rightbody{
+    font-family: 'Poppins', sans-serif;
+    padding-top:1.5rem;
+    padding-left: 6rem; 
+    padding-right: 6rem;
+    text-align: center;
+    margin-right: 3rem;
+    margin-left: 1.5rem;
+}
+
+.about{
+    font-size: 1.3rem;
+    text-align: center
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.links{
+    color:aliceblue;
+}
+
+.Education{
+    font-size: 1.4rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9rem;
+}
+
+.res{
+    position:relative;
+    top: -1rem;
+}
+
+.res1{
+    position: relative;
+    top: -2.75rem;
+}
+
+.res2{
+    position: relative;
+    top: 0.5rem;
+}
+
+.border{
+    box-shadow: 0 0  1rem rgb(255, 255, 255);
+    border-radius: 0.5rem;
+}
+
+#theme-buttons {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 1000;
+}
+
+.theme-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #333;
+    color: white;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+    background-color: #555;
+}
